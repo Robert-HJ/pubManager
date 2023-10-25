@@ -3,19 +3,17 @@ package com.toyProject.pubManager.model.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Getter
+@Setter
 @NoArgsConstructor
 @Entity
 @Table(name="table_info")
-public class TableEntity {
+public class TableInfoEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(unique = true, nullable = false)
-    private long id;
-
     @Column(length = 20, nullable = false)
-    private String contents;
+    private long table_number;
 
 }
