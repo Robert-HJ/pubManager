@@ -51,7 +51,7 @@ public class MenuInfoService {
         Optional<MenuInfoEntity> entity = menuInfoRepository.findById(dto.getNo());
         entity.get().updateMenuInfo(dto.getCategoryNo(), dto.getName(), dto.getPrice(), dto.getImageId());
 
-    }가
+    }
 
     @Transactional
     public void deleteMenuInfo(long no){
