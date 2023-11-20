@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: main
+    active: local
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3305/pub_manager_db?characterEncoding=UTF-8
@@ -21,8 +21,6 @@ spring:
 #springdoc
 springdoc:
   packages-to-scan: com.toyProject.pubManager
-  default-consumes-media-type: application/json;charset=UTF-8
-  default-produces-media-type: application/json;charset=UTF-8
   swagger-ui:
     path: /
     disable-swagger-default-url: true

@@ -1,21 +1,38 @@
 package com.toyProject.pubManager.model.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.toyProject.pubManager.model.menuCategory.MenuCategoryDto;
+import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-@Entity(name = "menu_category")
-public class MenuCategoryEntity {
+@Entity
+@NoArgsConstructor
+@Table(name="menu_category")
+public class MenuCategoryEntity extends BaseEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long no;
-
+    @Column(nullable = false, unique = true, length = 60)
     private String name;
+
+    @Builder
+    public MenuCategoryEntity(String name) {
+        this.name = name;
+    }
+
+    public MenuCategoryDto toDto(){
+        return MenuCategoryDto.builder()
+                .no(no)
+                .name(name)
+                .createDate(createDate)
+                .updateDate(updateDate)
+                .build();
+    }
+
+    public void updateMenuCategory(String name) {
+        this.name = name;
+    }
 
 }
