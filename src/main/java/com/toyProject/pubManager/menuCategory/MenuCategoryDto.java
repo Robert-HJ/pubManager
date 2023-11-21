@@ -1,6 +1,6 @@
-package com.toyProject.pubManager.model.menuCategory;
+package com.toyProject.pubManager.menuCategory;
 
-import com.toyProject.pubManager.model.entity.BaseDto;
+import com.toyProject.pubManager.framework.BaseDto;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -14,4 +14,7 @@ public class MenuCategoryDto extends BaseDto {
 
     private String name;
 
+    public MenuCategoryEntity toEntity(){
+        return MenuCategoryEntity.builder().name(name).build();
+    }
 }

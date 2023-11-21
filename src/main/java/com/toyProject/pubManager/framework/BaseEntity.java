@@ -1,4 +1,4 @@
-package com.toyProject.pubManager.model.entity;
+package com.toyProject.pubManager.framework;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

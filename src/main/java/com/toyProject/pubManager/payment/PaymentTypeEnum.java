@@ -1,4 +1,4 @@
-package com.toyProject.pubManager.model.enums;
+package com.toyProject.pubManager.payment;
 
 public enum PaymentTypeEnum {
     STATUS,

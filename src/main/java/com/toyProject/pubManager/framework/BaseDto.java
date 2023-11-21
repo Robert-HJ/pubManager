@@ -1,6 +1,5 @@
-package com.toyProject.pubManager.model.entity;
+package com.toyProject.pubManager.framework;
 
-import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;

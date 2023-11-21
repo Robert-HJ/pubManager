@@ -1,6 +1,6 @@
-package com.toyProject.pubManager.model.entity;
+package com.toyProject.pubManager.menuCategory;
 
-import com.toyProject.pubManager.model.menuCategory.MenuCategoryDto;
+import com.toyProject.pubManager.framework.BaseEntity;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
