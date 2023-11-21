@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: local
+    active: main
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3305/pub_manager_db?characterEncoding=UTF-8
