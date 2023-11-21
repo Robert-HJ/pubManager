@@ -2,13 +2,15 @@ package com.toyProject.pubManager.menu;
 
 import com.toyProject.pubManager.framework.BaseDto;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.SuperBuilder;
 
 @Getter
 @Setter
-@ToString
+@NoArgsConstructor
+@ToString(callSuper = true)
 @SuperBuilder
 public class MenuDto extends BaseDto {
 
