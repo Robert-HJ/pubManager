@@ -25,7 +25,7 @@ public class PaymentController {
     }
 
     @PostMapping("")
-    public long registPayment(@RequestBody PaymentDto param){
+    public int registPayment(@RequestBody PaymentDto param){
         return paymentService.registPayment(param);
     }
 

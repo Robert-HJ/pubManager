@@ -18,12 +18,15 @@ public class OrdersDto extends BaseDto {
 
     private int menuNo;
 
+    private OrdersStatusEnum status;
+
     private int count;
 
     public OrdersEntity toEntity(){
         return OrdersEntity.builder()
                 .tableNo(tableNo)
                 .menuNo(menuNo)
+                .status(status)
                 .count(count)
                 .build();
     }

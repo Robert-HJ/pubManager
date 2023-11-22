@@ -25,7 +25,7 @@ public class MenuController {
     }
 
     @PostMapping("")
-    public long registMenu(@RequestBody MenuDto param){
+    public int registMenu(@RequestBody MenuDto param){
         return menuService.registMenu(param);
     }
 

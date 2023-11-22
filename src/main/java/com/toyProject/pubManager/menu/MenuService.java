@@ -37,7 +37,7 @@ public class MenuService {
     }
 
     @Transactional
-    public long registMenu(MenuDto dto){
+    public int registMenu(MenuDto dto){
         MenuEntity entity = dto.toEntity();
 
         entity = menuRepository.save(entity);

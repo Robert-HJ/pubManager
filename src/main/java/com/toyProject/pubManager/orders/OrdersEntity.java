@@ -19,12 +19,15 @@ public class OrdersEntity extends BaseEntity {
 
     private int menuNo;
 
+    private OrdersStatusEnum status;
+
     private int count;
 
     @Builder
-    public OrdersEntity(int tableNo, int menuNo, int count) {
+    public OrdersEntity(int tableNo, int menuNo, OrdersStatusEnum status, int count) {
         this.tableNo = tableNo;
         this.menuNo = menuNo;
+        this.status = status;
         this.count = count;
     }
 

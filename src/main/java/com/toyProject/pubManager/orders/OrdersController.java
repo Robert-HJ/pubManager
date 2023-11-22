@@ -25,7 +25,7 @@ public class OrdersController {
     }
 
     @PostMapping("")
-    public long registOrders(@RequestBody OrdersDto param){
+    public int registOrders(@RequestBody OrdersDto param){
         return ordersService.registOrders(param);
     }
 
